@@ -1,0 +1,82 @@
+Assignment 3: 
+=============
+Function Design and Modularization - Create a document that describes the design of two modular functions: one that returns the factorial of a number, and another that calculates the nth Fibonacci number. Include pseudocode and
+a brief explanation of how modularity in programming helps with code reuse and organization.
+
+Function Design and Modularization
+===================================
+1. Function to Calculate Factorial:
+==================================
+This function calculates the factorial of a given number.
+
+Pseudocode:
+===========
+
+Function factorial(number)
+    result = 1
+    FOR i from 1 to number DO
+        result = result * i
+    ENDFOR
+    return result
+EndFunction
+
+Explanation:
+============
+The factorial of a number is the product of all positive integers less than or equal to that number. This function takes a number as input and calculates its factorial using a loop. It then returns the result.
+
+2. Function to Calculate Fibonacci Number:
+=========================================
+
+This function calculates the nth Fibonacci number.
+
+Pseudocode:
+===========
+
+Function fibonacci(n)
+    IF n = 0 THEN
+        return 0
+    ELSE IF n = 1 THEN
+        return 1
+    ELSE
+        Initialize variables a and b to 0 and 1 respectively
+        FOR i from 2 to n DO
+            temp = a + b
+            a = b
+            b = temp
+        ENDFOR
+        return b
+    ENDIF
+EndFunction
+
+Explanation:
+============
+The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones. This function takes an integer n as input and calculates the nth Fibonacci number using a loop. It starts with the base cases (0 and 1) and iteratively calculates subsequent Fibonacci numbers until it reaches the desired nth number.
+
+Modularity in Programming:
+==========================
+
+Modularity in programming refers to the practice of breaking down a program into smaller, independent modules or functions. Each module or function performs a specific task, and these tasks are combined to accomplish the overall functionality of the program. Modularity helps with code reuse and organization in several ways:
+
+Code Reusability:
+================= 
+Modular functions can be reused in multiple parts of a program or even in different programs altogether. For example, the factorial function and Fibonacci function described above can be reused whenever factorial or Fibonacci calculations are needed in a program.
+
+Simplified Maintenance: 
+=======================
+Modularization makes it easier to maintain and update code. When a change is required, developers only need to modify the relevant module or function without affecting other parts of the program.
+
+Improved Readability: 
+=====================
+Breaking down a program into smaller, well-defined modules enhances readability. Each module encapsulates a specific functionality, making it easier for developers to understand the code and collaborate on projects.
+
+Enhanced Testing: 
+=================
+Modular functions can be tested independently, which simplifies the testing process and improves code reliability. By isolating modules, developers can identify and fix bugs more efficiently.
+
+Overall, modularity promotes code reuse, simplifies maintenance, improves readability, and enhances testing, leading to more efficient and scalable software development.
+
+
+
+
+
+
